@@ -1,0 +1,483 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 18,
+        "name": "generate 5 day weather forecast by entering valid city name",
+        "description": "",
+        "id": "as-a-user-i-could-able-to-see-daily-forecast-should-displays-into-3-hour-data;generate-5-day-weather-forecast-by-entering-valid-city-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11205117678,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "launch weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.launchapplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1610573751,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter city name:\"Edinburgh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edinburgh",
+                  "offset": 19
+                }
+              ],
+              "location": "WebApplicationStepDefinition.enterCity(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221024849,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i see 5 days weather forecast",
+            "match": {
+              "location": "WebApplicationStepDefinition.verifyFiveDayForecast()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2311343219,
+              "error_message": "java.lang.AssertionError: Day 2 :Most dominant (or current) wind speed and direction\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat CucumberSteps.WebApplicationStepDefinition.selectEachForecast(WebApplicationStepDefinition.java:315)\r\n\tat ✽.Then i see each day forecast shows the most dominent details(Weatherforcast/DailyForecastSummary.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "i see each day forecast shows the most dominent details",
+            "match": {
+              "location": "WebApplicationStepDefinition.selectEachForecast()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "i close the weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.closeWeatherApp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@dailyforecaste"
+          },
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "As a user i could able to see daily forecast should displays into 3 hour data",
+    "description": "\nAs a weather forecast Customer, if i enter the city  , i should get 5 days weather forecast",
+    "id": "as-a-user-i-could-able-to-see-daily-forecast-should-displays-into-3-hour-data",
+    "keyword": "Feature",
+    "uri": "Weatherforcast/DailyForecastSummary.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      },
+      {
+        "line": 1,
+        "name": "@dailyforecaste"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 17,
+        "name": "generate 5 day weather forecast by entering valid city name",
+        "description": "",
+        "id": "as-a-user-if-i-enter-city-name-,-i-should-able-see-5-day-weather-forecast;generate-5-day-weather-forecast-by-entering-valid-city-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8694847835,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "launch weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.launchapplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2019382454,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter city name:\"Edinburgh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edinburgh",
+                  "offset": 19
+                }
+              ],
+              "location": "WebApplicationStepDefinition.enterCity(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167471511,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i see 5 days weather forecast",
+            "match": {
+              "location": "WebApplicationStepDefinition.verifyFiveDayForecast()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2498387062,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i close the weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.closeWeatherApp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@fiveday"
+          },
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "As a User if i enter city name , i should able see 5 day weather forecast",
+    "description": "\nAs a weather forecast Customer, if i enter the city  , i should get 5 days weather forecast",
+    "id": "as-a-user-if-i-enter-city-name-,-i-should-able-see-5-day-weather-forecast",
+    "keyword": "Feature",
+    "uri": "Weatherforcast/FiveDayWeather.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      },
+      {
+        "line": 1,
+        "name": "@fiveday"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Select day, get 3 hourly forecast",
+        "description": "",
+        "id": "as-a-user-select-day-twice,-hides-3-hourly-forecast;select-day,-get-3-hourly-forecast;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8946724294,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "launch weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.launchapplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1786614924,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter city name:\"Edinburgh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edinburgh",
+                  "offset": 19
+                }
+              ],
+              "location": "WebApplicationStepDefinition.enterCity(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 425306038,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i click on day:\"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "WebApplicationStepDefinition.clickDay(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 470871664,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i click on day:\"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "WebApplicationStepDefinition.clickDay(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26920618,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i should see 3 hourly forecast hidden:\"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 39
+                }
+              ],
+              "location": "WebApplicationStepDefinition.hiddenForecast(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2132739716,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i close the weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.closeWeatherApp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@hide"
+          },
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "As a User Select day twice, hides 3 hourly forecast",
+    "description": "\nAs a weather forecast Customer,if i enter city name, and if i select day, get 3 hourly forecast.",
+    "id": "as-a-user-select-day-twice,-hides-3-hourly-forecast",
+    "keyword": "Feature",
+    "uri": "Weatherforcast/HiddeHourlyForecast.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      },
+      {
+        "line": 1,
+        "name": "@hide"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Select day, get 3 hourly forecast",
+        "description": "",
+        "id": "as-a-user-if-i-select-day,-gets-3-hourly-forecast;select-day,-get-3-hourly-forecast;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8167402744,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "launch weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.launchapplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1775071358,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i enter city name:\"Edinburgh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edinburgh",
+                  "offset": 19
+                }
+              ],
+              "location": "WebApplicationStepDefinition.enterCity(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 448001610,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i click on day:\"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "WebApplicationStepDefinition.clickDay(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 475491349,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i should  get 3 hourly forecast:\"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 33
+                }
+              ],
+              "location": "WebApplicationStepDefinition.get3HourForeCast(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2030028974,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i close the weather forecast application",
+            "match": {
+              "location": "WebApplicationStepDefinition.closeWeatherApp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@threehours"
+          },
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "As a User if i Select day, gets 3 hourly forecast",
+    "description": "\nAs a weather forecast Customer,if i enter city name, and if i select day, get 3 hourly forecast.",
+    "id": "as-a-user-if-i-select-day,-gets-3-hourly-forecast",
+    "keyword": "Feature",
+    "uri": "Weatherforcast/HourlyForcast.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      },
+      {
+        "line": 1,
+        "name": "@threehours"
+      }
+    ]
+  }
+]
